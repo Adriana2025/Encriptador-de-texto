@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header><img src=logo.svg" alt=""></header>
+    <main>
+        <section class="entrada">
+            <textarea class="entrada-textarea"></textarea>
+            <p>solo letras minusculas y sin acento</p>
+            <div class="contenedor-botones">
+                <button class="button" onclick="btnEncriptar()">encriptar</button>
+                <button class="button" onclick="btnDesencriptar()">desencriptar</button>
+            </div>
+        </section>
+        <section class="salida">
+            <div class="inicio">
+                <img src="Muneco.svg" alt="">
+                <p>ningin mensaje fue encontrado</p>
+                <p>ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div class="final">
+                <textarea class="mensaje" id="texto"></textarea>
+                <div class="botones-respuesta">
+                    <button class="btn-copiar" title="Copiar" onclick="btnCopiar()">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>desarrollado por Adriana</p>
+    </footer>
+
+
+
+
+ <script  src="script.js"></script>
+</body>
+</html>

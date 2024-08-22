@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f5fc;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.entrada-textarea {
+    resize: none;
+    height: 600px;
+    width: 100%;
+    padding: 10px;
+}
+
+.contenedor-botones {
+    display: flex;
+    gap: 24px;
+}
+
+.button {
+    max-width: 328px;
+    padding: 24px;
+    border-radius: 24px;
+    font-family: sans-serif;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+
+}
+
+main {
+    display: flex;
+    height: 500px;
+    gap: 80px;
+}
+
+.entrada {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.salida {
+    width: 400px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.mensaje {
+    outline: none;
+    resize: none;
+    font-size: medium;
+    height: 80%;
+    width: 100%;
+    border: none;
+}
+
+.final {
+    width: 100%;
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    gap: 25px;
+}
+footer{
+    background-color: blue;
+    margin-top: auto;
+}
+
+@media (width <=1024px) {
+    main {
+        flex-direction: column;
+    }
+
+    .salida {
+        width: 100%;
+    }
+
+    .inicio img {
+        display: none;
+    }
+
+    .mensaje {
+        min-height: 100px;
+    }
+}
